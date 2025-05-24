@@ -86,8 +86,8 @@ body {
 .btn {
     display: inline-block;
     padding: 4px 8px;
-    background-color: green;
-    color: white;
+    background-color: #bb86fc;
+    color: #121212;
     text-decoration: none;
     border-radius: 4px;
     border: none;
@@ -426,3 +426,49 @@ tr:hover {
         overflow-x: auto;
     }
 }
+
+/* Estilos para a lista de pagamentos em atraso */
+.card-atrasado {
+    border-left: 4px solid #cf6679; /* Vermelho do tema */
+}
+
+.card-atrasado h2 {
+    color: #cf6679;
+}
+
+.pagamento-atrasado {
+    background-color: #3a1e24 !important; /* Fundo vermelho escuro */
+    border-left: 4px solid #cf6679;
+}
+
+.pagamento-atrasado td {
+    color: #f4c7c3; /* Texto mais claro para contraste */
+}
+
+.pagamento-atrasado:hover {
+    background-color: #4a2e34 !important; /* Vermelho um pouco mais claro no hover */
+}
+
+/* Ajuste para manter a cor do botão original na linha atrasada */
+.pagamento-atrasado .btn {
+    /* Mantém as cores padrão dos botões */
+}
+
+/* Estilos para a lista de pagamentos do dia (mantendo lilás) */
+.card-hoje {
+    border-left: 4px solid #bb86fc; /* Lilás do tema */
+}
+
+.card-hoje h2 {
+    color: #bb86fc;
+}
+
+.pagamento-hoje {
+    background-color: #3d2d40 !important; /* Fundo lilás escuro */
+    border-left: 4px solid #bb86fc;
+}
+
+.pagamento-hoje:hover {
+    background-color: #4d3a50 !important; /* Lilás um pouco mais claro no hover */
+}
+

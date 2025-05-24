@@ -13,6 +13,5 @@
 <div class="footer">
     <div class="copyright">
         &copy; <?php echo date('Y'); ?> Fernando Morais - Todos os direitos reservados
-        21 96568-0720 / Fernandomorais.ads@gmail.com
     </div>
 </div>

@@ -86,7 +86,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['tipo_pagamento'])) {
             // Nenhum pagamento - apenas atualiza a data e o status
             // Atualiza o devedor no banco de dados
             if (atualizarDevedor($db, $id, $devedorAtualizado)) {
-                $mensagem = "Registrado que não houve pagamento. Juros de R$20 por dia serão aplicados.";
+                $mensagem = "Registrado que não houve pagamento. Juros de R$10 por dia serão aplicados.";
                 $tipoAlerta = "warning";
             } else {
                 $mensagem = "Erro ao registrar o status de pagamento.";
@@ -187,7 +187,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['tipo_pagamento'])) {
             <ul>
                 <li><strong>Pagamento Total:</strong> Quita a dívida completamente e move o registro para a lista de quitados.</li>
                 <li><strong>Pagamento de Juros:</strong> Paga apenas os juros mensais (40% do valor inicial) e mantém o valor principal.</li>
-                <li><strong>Nenhum Pagamento:</strong> Registra que não houve pagamento, aplicando juros de R$20 por dia de atraso.</li>
+                <li><strong>Nenhum Pagamento:</strong> Registra que não houve pagamento, aplicando juros de R$10 por dia de atraso.</li>
             </ul>
             <p>Se passar um mês sem pagamento, será aplicado novamente 40% de juros sobre o valor atual.</p>
         </div>

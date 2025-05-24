@@ -123,7 +123,7 @@ function atualizarJuros(&$devedores) {
             if ($diasAtraso > 0 && $devedor['ultimo_pagamento'] == 'nenhum') {
                 // Adiciona R$10 por dia de atraso
                 $valorAnterior = $devedor['valor_atual'];
-                $devedor['valor_atual'] += (20 * $diasAtraso);
+                $devedor['valor_atual'] += (10 * $diasAtraso);
                 $devedor['data_ultima_atualizacao'] = $dataAtual->format('Y-m-d');
                 
                 // Registra log da atualização
@@ -131,7 +131,7 @@ function atualizarJuros(&$devedores) {
                     'Juros por atraso aplicados para %s: %d dias, R$%d. Valor anterior: %.2f, Novo valor: %.2f',
                     $devedor['nome'],
                     $diasAtraso,
-                    20 * $diasAtraso,
+                    10 * $diasAtraso,
                     $valorAnterior,
                     $devedor['valor_atual']
                 ));
