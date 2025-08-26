@@ -166,7 +166,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['tipo_pagamento'])) {
                     </div>
                     <div class="payment-option juros" onclick="selecionarPagamento('juros')">
                         <div class="payment-icon">💸</div>
-                        <h3>Pagamento de Juros</h3>
+                        <h3>Pagamento Juros</h3>
                         <p>Paga apenas os juros mensais (40%)</p>
                     </div>
                     <div class="payment-option nenhum" onclick="selecionarPagamento('nenhum')">
